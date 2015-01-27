@@ -15,7 +15,7 @@ The Zero Tiny BLE is a small low cost and low powered embeddable board with an A
 
 ## Programming Notes
 
-* The ATTiny85 cannot be programmed in circuit.  It must be removed and a separate programmer such as the excellent Sparkfun Tiny AVR Programmer.  
+* The ATTiny85 cannot be programmed in circuit.  It must be removed and a separate programmer such as the excellent [Sparkfun Tiny AVR Programmer](https://www.sparkfun.com/products/11801).  
 * The ATTiny85 pins PB3 (RX) and PB4 (TX) are used for serial communication with the Bluetooth 4.0 radio.
 * The ATTiny85 does not have hardware UART serial.  The Arduino SoftwareSerial library should be used. Example:
 
