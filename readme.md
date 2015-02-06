@@ -12,6 +12,7 @@ The Zero Tiny BLE is a small low cost and low powered embeddable board with an A
 * Small form factor of 20mm x 47mm (0.79” x 1.85”)
 
 ## Pinouts
+![what](https://raw.githubusercontent.com/micahpearlman/zero-tiny-ble/master/docs/pinouts.png "Pin Outs")
 
 ## Programming Notes
 
