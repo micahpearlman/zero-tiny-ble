@@ -13,6 +13,13 @@ You will need the following:
 * For iOS you will need [XCode with the iOS SDK](https://developer.apple.com/devcenter/ios/index.action).
 * Example code and upto date documents on the [Zero Tiny BLE Github](https://github.com/micahpearlman/zero-tiny-ble)
 
+## Powering Up Your Zero Tiny BLE
+
+* Plug in a USB mini B cable -OR- 3.7V LiPo battery.
+* You should see a blinking blue LED.  This means that the Bluetooth radio is up and running.
+* _IF_ you have both a LiPo battery and a the USB plugged in you will see a green LED.  This means that the USB is charging the battery _and_ powering the board.
+
+
 ## Setting Up Arduino Environment for ATTiny85
 
 _Instructions are derived from [High-Low Tech tutorial](http://highlowtech.org/?p=1695)._
@@ -26,5 +33,15 @@ _Instructions are derived from [High-Low Tech tutorial](http://highlowtech.org/?
 7. Restart the Arduino development environment.
 8. You should see ATtiny entries in the Tools > Board menu.
 
-## Programming Arduino
- 
+## Hello World on the Arduino
+
+1. Download the [Hello World example sketch](https://github.com/micahpearlman/zero-tiny-ble/tree/master/arduino-example/hello-world)
+2. Open this up in the Arduino IDE and compile and run using your chosen ATTiny85 programmer.
+
+## Setting up the ZOBluetoothUART iOS Project
+
+1. Download the [ZOBluetoothUART project from GitHub](https://github.com/micahpearlman/zero-tiny-ble/tree/master/ios-examples/ZOBluetoothUART).
+2. Power up your Zero Tiny BLE.
+3. Compile and run from XCode.
+4. The Zero Tiny BLE blue LED should change from blinking to always on.  This means you are connected.
+5. You should see "Hello Zero Tiny!" printing out every second.
