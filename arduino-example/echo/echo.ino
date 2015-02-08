@@ -44,22 +44,23 @@ void setup() {
 }
 
 
-
-char buffer[64];
+#define BUFFER_SIZE 64
+char buffer[BUFFER_SIZE];
 void loop() {
-  int byte_cnt = _bluetoothSerial.available();
-  if(byte_cnt) {
-
-    for(int i = 0; i < byte_cnt; i++) {
-        buffer[i] = _bluetoothSerial.read();        
-        delay(10);
-    }
-      
-    buffer[byte_cnt] = '\0'; // terminate string
-    _bluetoothSerial.print(buffer);
-  }
+   // fill up a read buffer  
+   int buffer_cnt = 0;
+   while(_bluetoothSerial.available() && buffer_cnt != BUFFER_SIZE) {
+       buffer[buffer_cnt] = _bluetoothSerial.read();
+       buffer_cnt++;
+       delay(20);  
+   }
+   
+   // if we read the buffer echo it back
+   if ( buffer_cnt > 0 ) {
+      buffer[buffer_cnt] = '\0'; // terminate string
+      _bluetoothSerial.print(buffer);     
+   }
   
-  
 
-  delay(10);  
+  delay(100);  
 }
