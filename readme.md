@@ -13,6 +13,11 @@ The Zero Tiny BLE is a small low cost and low powered embeddable board with an A
 * You can purchase a complete board at [zeroengineering.io](http://zeroengineering.io/product/15/)
 * You can order unpopulated boards from [OSH Park](https://oshpark.com/shared_projects/1aQHSlM2)
 
+## Why?
+
+This is a project that fell out of developing sensors (Exhaust Gas Temp, RPM, Lap Timer, etc) for my vintage road racing motorcycle.  I also wanted to use my iOS device as the display and data logger.  So I needed a small, cheap and general purpose board that had  uC and BLE capabilities and could be powered by a small LiPo battery (and be charged by a USB connection).  The HM-10 BLE was super cheap and incredibly easy to integrate. The ATTiny85 is also super cheap, requires practically zero external components when running on it's internal oscillator and can be programmed in the Arduino IDE. 
+
+
 ## Pinouts
 ![what](https://raw.githubusercontent.com/micahpearlman/zero-tiny-ble/master/docs/pinouts.png "Pin Outs")
 
