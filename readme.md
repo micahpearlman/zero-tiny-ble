@@ -10,7 +10,7 @@ The Zero Tiny BLE is a small low cost and low powered embeddable board with an A
 * Easy prototyping via breadboard.
 * Use either Arduino or AVR-GCC development environments.
 * Small form factor of 20mm x 47mm (0.79” x 1.85”)
-* You can purchase a complete board at [zeroengineering.io](http://zeroengineering.io/product/15/)
+* You can purchase a complete board at [Tindie](https://www.tindie.com/products/micahpearlman/zero-tiny-ble/)
 * You can order unpopulated boards from [OSH Park](https://oshpark.com/shared_projects/1aQHSlM2)
 
 ## Why?
