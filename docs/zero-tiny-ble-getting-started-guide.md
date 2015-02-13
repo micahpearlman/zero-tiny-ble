@@ -16,7 +16,7 @@ You will need the following:
 ## Powering Up Your Zero Tiny BLE
 
 * Plug in a USB mini B cable -OR- 3.7V LiPo battery.
-* You should see a blinking blue LED.  This means that the Bluetooth radio is up and running.
+* You should see a blinking blue LED.  This means that the Bluetooth radio is up and running.  When solid blue that means Bluetooth is connected.
 * _IF_ you have both a LiPo battery and a the USB plugged in you will see a green LED.  This means that the USB is charging the battery _and_ powering the board.
 
 
@@ -31,7 +31,7 @@ _Instructions are derived from [High-Low Tech tutorial](http://highlowtech.org/?
 5. Create a new sub-folder called “hardware” in the sketchbook folder, if it doesn’t exist already.
 6. Copy the “attiny” folder (not the attiny-master folder) from the unzipped ATtiny master.zip to the “hardware” folder. You should end up with folder structure like Documents > Arduino > hardware > attiny that contains the file boards.txt and another folder called variants.
 7. Restart the Arduino development environment.
-8. You should see ATtiny entries in the Tools > Board menu.
+8. You should see ATtiny entries in the Tools > Board menu. Important: make sure that when programming your ATiny85 in the Arduino IDE that the board is set to “ATTiny85 (internal 8MHz)”
 
 ## Hello World on the Arduino
 
